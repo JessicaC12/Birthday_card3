@@ -1,0 +1,41 @@
+body {
+  background-color: #ffeaa7; /* 溫暖的底色 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Microsoft JhengHei', sans-serif;
+}
+#w {
+  display: none; /* 初始狀態：隱藏 */
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #555;
+  /* 加入一點點淡入動畫的感覺 */
+  transition: all 0.5s ease; 
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  text-align: center;
+  animation: float 3s ease-in-out infinite; /* 漂浮動畫 */
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+button {
+  background-color: #ff7675;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
